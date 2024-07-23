@@ -95,40 +95,13 @@ useEffect(() =>{
   console.log("currentItemIndex",currentItemIndex)
 },[currentItemIndex])
  
-// const handleLearn = (url) => {
-//   window.location.href = url;
+const handleLearn = (url) => {
+  window.location.href = url;
   
 
-// }
+}
 
 
-
-const handleLearn = (url) => {
-  // Send a message to the parent window to navigate
-  window.parent.postMessage(
-    { url: url },
-    '*'
-  );
-};
-useEffect(() => {
-  const handleMessage = (event) => {
-    // Check the origin of the message for security
-    if (event.origin !== 'https://navyagunda23.github.io') {
-      return;
-    }
-
-    // Perform the navigation
-    window.location.href = event.data.url;
-  };
-
-  // Add event listener for messages from iframe
-  window.addEventListener('message', handleMessage);
-
-  // Cleanup event listener on component unmount
-  return () => {
-    window.removeEventListener('message', handleMessage);
-  };
-}, []);
 
   return (
     <div style={{ width: "90%", height: "max-content",margin:"auto" }} >
