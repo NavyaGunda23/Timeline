@@ -16,9 +16,10 @@ body {
   column-gap: 5vw;
  }
 .project-image{
-  width: 20vw;
   height: 200px;
-  object-fit: contain;
+  object-fit: cover;
+  width: 50vw;
+  object-position: 0 0;
 }
 .projectTitle{
   font-size: 28px;
