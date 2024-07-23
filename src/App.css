@@ -17,6 +17,7 @@ body {
 .project-image{
   width: 20vw;
   height: 200px;
+  object-fit: contain;
 }
 .projectTitle{
   font-size: 28px;
@@ -68,3 +69,32 @@ body {
 .focus-visible>div:first-child{
   display: none;
 }
+.timeline-horz-item-container{
+  width: 20vw !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .timeline-horz-item-container{
+    width: 20vw !important;
+  }
+  .projectTitle{
+    font-size: 14px !important;
+  }
+  .projectDesc{
+    font-size: 12px !important;
+  }
+  .project-button a{
+    font-size: 12px !important;
+  }
+  .project-image{
+    width: 35vw;
+  }
+}
+
+
+@media only screen and (min-width: 1700px)   {
+
+  .timeline-horz-item-container{
+    width: 10vw !important;
+  }
+  }
