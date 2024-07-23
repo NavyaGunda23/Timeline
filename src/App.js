@@ -95,6 +95,10 @@ useEffect(() =>{
   console.log("currentItemIndex",currentItemIndex)
 },[currentItemIndex])
  
+const handleLearn = (url) => {
+  window.open(url,"_self");
+}
+
   return (
     <div style={{ width: "90%", height: "max-content",margin:"auto" }} >
      <Chrono
@@ -142,7 +146,7 @@ useEffect(() =>{
                 <h2 className="projectTitle">{data.projectName}</h2>
                 <p className="projectDesc">{data.Projectdescription}</p>
                 <div className="project-button">
-                  <a href={`${data.projectDetailsURL}`}>Learn More</a>
+                  <a onClick={() => handleLearn(data.projectDetailsURL)}>Learn More</a>
                   <hr />
                 </div>
               </div>
