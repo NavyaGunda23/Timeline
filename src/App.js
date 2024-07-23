@@ -97,7 +97,10 @@ useEffect(() =>{
  
 const handleLearn = (url) => {
   window.location.href = url;
-  
+  window.parent.postMessage({
+    type: 'NAVIGATE',
+    url: url // replace with the desired URL
+  }, '*');
 
 }
 
