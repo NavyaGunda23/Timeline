@@ -96,7 +96,8 @@ useEffect(() =>{
 },[currentItemIndex])
  
 const handleLearn = (url) => {
-  window.open(url,"_self");
+  window.parent.location.href = url;
+ 
 }
 
   return (
