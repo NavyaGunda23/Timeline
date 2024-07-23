@@ -1,6 +1,7 @@
 .App {
   text-align: center;
 }
+
 body {
   font-family: 'Poppins';
   background: #414242;
@@ -22,6 +23,7 @@ body {
 .projectTitle{
   font-size: 28px;
   color: white;
+  margin: 0px !important;
 }
 .projectDesc{
   font-size: 28px;
@@ -36,6 +38,12 @@ body {
   font-size: 22px;
  color: #fff !important;
  text-decoration: none !important;
+}
+.card-description{
+  margin: 0px !important;
+}
+.timeline-main-wrapper{
+  min-height: 90px !important;
 }
 .project-button hr{
   color: #E3AB23;
@@ -74,6 +82,12 @@ body {
   height: 100px !important;
 }
 
+.timeline-card-content{
+  height: max-content !important;
+}
+.timeline-horz-card-wrapper{
+  margin: 0 !important;
+}
 @media only screen and (max-width: 768px) {
   .timeline-horz-item-container{
     width: 20vw !important;
