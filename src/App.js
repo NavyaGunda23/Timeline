@@ -96,8 +96,8 @@ useEffect(() =>{
 },[currentItemIndex])
  
 const handleLearn = (url) => {
-  // window.parent.location.href = url;
-  window.parent.postMessage({ url: 'https://navyagunda.wixstudio.io/didar/projects/project-name1' }, '*');
+  window.location.href = url;
+  
 
 }
 
