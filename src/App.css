@@ -39,6 +39,7 @@ body {
   font-size: 22px;
  color: #fff !important;
  text-decoration: none !important;
+ cursor: pointer;
 }
 .card-description{
   margin: 0px !important;
