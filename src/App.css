@@ -16,9 +16,9 @@ body {
   column-gap: 5vw;
  }
 .project-image{
-  height: 200px;
+  height: 300px;
   object-fit: cover;
-  width: 50vw;
+  width: 40vw;
   object-position: 0 0;
 }
 .projectTitle{
@@ -30,6 +30,10 @@ body {
   font-size: 28px;
   font-size: 18px;
   color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 28px;
+  width: 70%;
 }
 .project-button{
   width: fit-content;
@@ -115,3 +119,6 @@ body {
     width: 10vw !important;
   }
   }
+button{
+  background: red !important;
+}

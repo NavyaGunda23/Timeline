@@ -1,109 +1,16 @@
 import React, {  useEffect, useState } from "react";
 import { Chrono } from "react-chrono";
 import "./App.css"
-
+import Timeline from "./Timeline";
 
 const App = () => {
 
 
 
-  const dataSample = [
-    {
-      title: '2001',
-      porjectImage:"https://i2-prod.mirror.co.uk/incoming/article10847802.ece/ALTERNATES/s810/PAY-Dunkirk-in-colour.jpg",
-      projectName:"Project Name",
-      Projectdescription:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-      projectDetailsURL:"https://navyagunda.wixstudio.io/didar/projects/project-name1"
-    },
-    {
-      title: '2002',
-      porjectImage:"https://i2-prod.mirror.co.uk/incoming/article10847802.ece/ALTERNATES/s810/PAY-Dunkirk-in-colour.jpg",
-      projectName:"Project Name",
-      Projectdescription:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-       projectDetailsURL:"https://navyagunda.wixstudio.io/didar/projects/project-name1"
-    },
-    {
-      title: '2003',
-      porjectImage:"https://i2-prod.mirror.co.uk/incoming/article10847802.ece/ALTERNATES/s810/PAY-Dunkirk-in-colour.jpg",
-      projectName:"Project Name",
-      Projectdescription:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-       projectDetailsURL:"https://navyagunda.wixstudio.io/didar/projects/project-name1"
-    },
-    {
-      title: '2004',
-      porjectImage:"https://i2-prod.mirror.co.uk/incoming/article10847802.ece/ALTERNATES/s810/PAY-Dunkirk-in-colour.jpg",
-      projectName:"Project Name",
-      Projectdescription:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-       projectDetailsURL:"https://navyagunda.wixstudio.io/didar/projects/project-name1"
-    },
-    {
-      title: '2005',
-      porjectImage:"https://i2-prod.mirror.co.uk/incoming/article10847802.ece/ALTERNATES/s810/PAY-Dunkirk-in-colour.jpg",
-      projectName:"Project Name",
-      Projectdescription:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-       projectDetailsURL:"https://navyagunda.wixstudio.io/didar/projects/project-name1"
-    },
-    {
-      title: '2006',
-      porjectImage:"https://i2-prod.mirror.co.uk/incoming/article10847802.ece/ALTERNATES/s810/PAY-Dunkirk-in-colour.jpg",
-      projectName:"Project Name",
-      Projectdescription:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-       projectDetailsURL:"https://navyagunda.wixstudio.io/didar/projects/project-name1"
-    },
-    {
-      title: '2007',
-      porjectImage:"https://i2-prod.mirror.co.uk/incoming/article10847802.ece/ALTERNATES/s810/PAY-Dunkirk-in-colour.jpg",
-      projectName:"Project Name",
-      Projectdescription:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-       projectDetailsURL:"https://navyagunda.wixstudio.io/didar/projects/project-name1"
-    },
-    {
-      title: '2008',
-      porjectImage:"https://i2-prod.mirror.co.uk/incoming/article10847802.ece/ALTERNATES/s810/PAY-Dunkirk-in-colour.jpg",
-      projectName:"Project Name",
-      Projectdescription:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-       projectDetailsURL:"https://navyagunda.wixstudio.io/didar/projects/project-name1"
-    }, {
-      title: '2009',
-      porjectImage:"https://i2-prod.mirror.co.uk/incoming/article10847802.ece/ALTERNATES/s810/PAY-Dunkirk-in-colour.jpg",
-      projectName:"Project Name",
-      Projectdescription:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-       projectDetailsURL:"https://navyagunda.wixstudio.io/didar/projects/project-name1"
-    },
-    {
-      title: '2010',
-      porjectImage:"https://i2-prod.mirror.co.uk/incoming/article10847802.ece/ALTERNATES/s810/PAY-Dunkirk-in-colour.jpg",
-      projectName:"Project Name",
-      Projectdescription:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-       projectDetailsURL:"https://navyagunda.wixstudio.io/didar/projects/project-name1"
-    }
-  ]
-
-
-  const [currentItemIndex, setCurrentItemIndex] = useState(0);
-
- 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentItemIndex((prevIndex) => (prevIndex + 1) % dataSample.length);
-    }, 1000); // 4.5 seconds
-
-    return () => clearInterval(intervalId); // Cleanup interval on component unmount
-  }, [dataSample.length]);
-
-useEffect(() =>{
-  console.log("currentItemIndex",currentItemIndex)
-},[currentItemIndex])
- 
-const handleLearn = (url) => {
-  window.open(url,'_blank');
-}
-
-
-
   return (
     <div style={{ width: "90%", height: "max-content",margin:"auto" }} >
-     <Chrono
+      <Timeline />
+     {/* <Chrono
      enableOutline
           items={dataSample}
           mode="HORIZONTAL"
@@ -155,7 +62,7 @@ const handleLearn = (url) => {
               </div>
             </div>
           ))}
-        </Chrono>
+        </Chrono> */}
 
       
     </div>
