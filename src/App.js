@@ -96,11 +96,11 @@ useEffect(() =>{
 },[currentItemIndex])
  
 const handleLearn = (url) => {
-  window.location.parent.href = url;
-  window.parent.postMessage({
-    type: 'NAVIGATE',
-    url: url // replace with the desired URL
-  }, '*');
+  window.location.href = url;
+  // window.parent.postMessage({
+  //   type: 'NAVIGATE',
+  //   url: url // replace with the desired URL
+  // }, '*');
 
 }
 
