@@ -105,12 +105,15 @@ body {
   .projectDesc{
     font-size: 12px !important;
     width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .project-button a{
     font-size: 12px !important;
   }
   .project-image{
     width: 35vw;
+    height: 200px;
   }
   
 }
