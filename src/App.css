@@ -122,3 +122,6 @@ body {
 button{
   background: red !important;
 }
+progress{
+  display: none !important;
+}

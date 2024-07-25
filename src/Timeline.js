@@ -13,7 +13,6 @@ const Timeline = () =>{
                 }
             }
         },500)
-     
       }, []);
 
       useEffect(() => {
@@ -124,7 +123,7 @@ const Timeline = () =>{
           timelinePointDimension={20}
          
         //   onScrollEnd={handleLoadMore}
-          // disableInteraction
+        //   disableInteraction
           // cardPositionHorizontal="TOP"
         //   parseDetailsAsHTML
           buttonTexts={{
