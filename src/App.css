@@ -50,6 +50,7 @@ body {
 }
 .timeline-main-wrapper{
   min-height: 90px !important;
+  overflow: hidden !important;
 }
 .project-button hr{
   color: #E3AB23;
