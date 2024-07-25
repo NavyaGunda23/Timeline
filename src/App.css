@@ -104,12 +104,20 @@ body {
   }
   .projectDesc{
     font-size: 12px !important;
+    width: 90%;
   }
   .project-button a{
     font-size: 12px !important;
   }
   .project-image{
     width: 35vw;
+  }
+  
+}
+
+@media only screen and (max-width: 1398px) {
+  .projectDesc{
+    width: 90%;
   }
 }
 
