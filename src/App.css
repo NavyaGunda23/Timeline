@@ -105,8 +105,8 @@ body {
   .projectDesc{
     font-size: 12px !important;
     width: 90%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
   }
   .project-button a{
     font-size: 12px !important;
